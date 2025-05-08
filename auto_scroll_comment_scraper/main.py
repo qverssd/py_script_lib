@@ -5,7 +5,7 @@ import time
 
 def scroll_and_collect_comments(url, comment_selector, scroll_times=5, delay=2):
     options = Options()
-    driver = webdriver.Chrome
+    driver = webdriver.Chrome(options=options)
 
     driver.get(url)
     time.sleep(5)
