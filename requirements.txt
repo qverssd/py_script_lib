@@ -5,3 +5,4 @@ unittest==1.0.0
 scapy==2.4.5
 python-dotenv==0.19.2
 python>=3.7
+selenium==4.15.2
