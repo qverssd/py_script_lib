@@ -6,7 +6,7 @@ main = Blueprint('main', __name__)
 def home():
     return render_template('index.html')
 
-@main.route('/submit', method=['GET', 'POST'])
+@main.route('/submit', methods=['GET', 'POST'])
 def submit():
-    name = request.form['name']
+    name = request.form.get('name', 'Anonymous')
     return f'Hi, {name}! Thanks for submitting form'
